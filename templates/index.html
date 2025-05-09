@@ -1,0 +1,861 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Inside <head> -->
+
+
+
+
+
+  
+  
+  
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="{% static 'assets/img/myprofile.jpg' %}" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">DILSHA</h1>
+    </a>
+
+    <div class="social-links text-center">
+    <!-- Social Links -->
+<a href="https://twitter.com/your_twitter_handle" class="twitter" target="_blank">
+  <i class="bi bi-twitter-x"></i>
+</a>
+
+<a href="https://github.com/dilsha-dev/project.git" class="github" target="_blank">
+  <i class="bi bi-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/dilsha-pk" class="linkedin" target="_blank">
+  <i class="bi bi-linkedin"></i>
+</a>
+
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#projects"><i class="bi bi-briefcase navicon"></i> Projects</a></li>
+
+        <li><a href="#certificate"><i class="bi bi-hdd-stack navicon"></i> Certificates</a></li>
+        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static 'assets/img/heros.jpg' %}" alt="" data-aos="fade-in" class="">
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100" style="color: #eaeaea; font-family: 'Poppins', sans-serif; padding: 60px 20px;">
+  
+        <h1 style="font-size: 36px; font-weight: 700; color: #ffffff; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+          Hello, My Name is 
+          <span style="color: #00bcd4; font-style: italic;">Dilsha PK</span>
+        </h1>
+      
+        <p style="font-size: 20px; font-weight: 500; color: #ece8dd; margin: 15px 0 30px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+          I'm <span class="typed" data-typed-items="Designer, Full Stack Python Developer, Freelancer"></span>
+        </p>
+      
+        <p style="font-size: 16px; color: #cccccc; max-width: 720px; margin: auto; line-height: 1.8; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+          I have 1 Year of hands-on experience in Python and Django, and have completed multiple academic and personal projects.
+          Known for being a smart and collaborative team player, I focus on writing clean, efficient code and delivering user-friendly web solutions.
+        </p>
+
+        
+  <!-- Download CV Button -->
+  <div style="margin-top: 30px;">
+    <a href="{% static 'assets/files/Dilsha Full-Stack-2.pdf' %}" class="btn btn-outline-info btn-lg" download style="font-weight: 500; border-radius: 30px; padding: 10px 30px;">
+      <i class="bi bi-download me-2"></i>Download CV
+    </a>
+  </div>
+      </div>
+      
+      
+
+    </section><!-- /Hero Section -->
+    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Full-Stack Developer with 1 year of hands-on experience in web development. Skilled in Python, Django,
+          HTML5, CSS3, JavaScript, React.js, AJAX, JSON, and PHP. Experienced with MySQL and SQLite
+          databases, and proficient in using front-end frameworks like Django, Bootstrap. Fluent in English and
+          Malayalam</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+         
+          <div class="col-lg-8 content">
+            <h2>Full Stack Developer &amp; Web Designer  &amp; Python Developer.</h2>
+            <br>
+            
+          
+        <div class="row">
+          <div class="col-lg-6 mb-3">
+            <ul class="list-unstyled">
+              <li><i class="bi bi-calendar-event-fill me-2 text-info"></i> <strong>Birthday:</strong> <span>14 Aug 1994</span></li>
+              <li><i class="bi bi-heart-fill me-2 text-danger"></i> <strong>Marital Status:</strong> <span>Married</span></li>
+
+              <li><i class="bi bi-phone-fill me-2 text-info"></i> <strong>Phone:</strong> <span>+971581072001</span></li>
+              <li><i class="bi bi-geo-alt-fill me-2 text-info"></i> <strong>City:</strong> <span>Dubai, UAE</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 mb-3">
+            <ul class="list-unstyled">
+              <li><i class="bi bi-gender-female me-2 text-info"></i> <strong>Gender:</strong> <span>Female</span></li>
+
+              <li><i class="bi bi-mortarboard-fill me-2 text-info"></i> <strong>Degree:</strong> <span>Master</span></li>
+              <li><i class="bi bi-envelope-fill me-2 text-info"></i> <strong>Email:</strong> <span>dilshapk57@gmail.com</span></li>
+              <li><i class="bi bi-person-check-fill me-2 text-info"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    </section><!-- /About Section -->
+
+  <!-- Stats Section -->
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <!-- Experience Months -->
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-briefcase-fill"></i>
+          <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>1 year of Experience</strong> <span>in Python & Django</span></p>
+        </div>
+      </div>
+
+      <!-- Projects Completed -->
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-journal-code"></i>
+          <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Projects Completed</strong> <span>Academic & Freelance</span></p>
+        </div>
+      </div>
+
+      <!-- Coding Hours -->
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-clock-history"></i>
+          <span data-purecounter-start="0" data-purecounter-end="900" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hours of Coding</strong> <span>in real-time projects & practice</span></p>
+        </div>
+      </div>
+
+      <!-- Team Collaborations -->
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-people-fill"></i>
+          <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Team Projects</strong> <span>in collaborative settings</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <!-- Skill Progress Bars -->
+    <section id="skills" class="skills section bg-light py-5">
+      <div class="container" data-aos="fade-up">
+        <!-- Title -->
+        <div class="section-title text-start mb-5">
+          <h2 class="fw-bold" style="color: black;">Skills & Tools</h2>
+       
+
+          <p class="text-muted">Technologies, tools, and environments I specialize in</p>
+        </div>
+      </div>
+    </div>
+    
+        <!-- Main Skills Grid -->
+        <div class="row g-4 text-center">
+    
+          <!-- HTML -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body">
+                <i class="bi bi-filetype-html text-danger display-6 mb-2"></i>
+                <h5 class="card-title">HTML</h5>
+                <span class="badge bg-success">100%</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- CSS -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body">
+                <i class="bi bi-filetype-css text-primary display-6 mb-2"></i>
+                <h5 class="card-title">CSS</h5>
+                <span class="badge bg-success">90%</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- JavaScript -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body">
+                <i class="bi bi-filetype-js text-warning display-6 mb-2"></i>
+                <h5 class="card-title">JavaScript</h5>
+                <span class="badge bg-warning text-dark">75%</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Python -->
+          <!-- Python -->
+<div class="col-md-3 col-sm-6">
+  <div class="card h-100 shadow border-0">
+    <div class="card-body">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="mb-2" style="width: 50px; height: 50px;">
+      <h5 class="card-title">Python</h5>
+      <span class="badge bg-info text-dark">100%</span>
+    </div>
+  </div>
+</div>
+
+    
+          <!-- Django -->
+         <!-- Django -->
+<div class="col-md-3 col-sm-6">
+  <div class="card h-100 shadow border-0">
+    <div class="card-body">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="Django" class="mb-2" style="width: 50px; height: 50px;">
+      <h5 class="card-title">Django</h5>
+      <span class="badge bg-info text-dark">90%</span>
+    </div>
+  </div>
+</div>
+
+    <!-- React -->
+<!-- React -->
+<div class="col-md-3 col-sm-6">
+  <div class="card h-100 shadow border-0">
+    <div class="card-body">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js" class="mb-2" style="width: 50px; height: 50px;">
+      <h5 class="card-title">React.js</h5>
+      <span class="badge bg-info text-dark">80%</span>
+    </div>
+  </div>
+</div>
+
+    
+          <!-- PHP -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body">
+                <i class="bi bi-filetype-php text-primary display-6 mb-2"></i>
+                <h5 class="card-title">PHP</h5>
+                <span class="badge bg-warning text-dark">50%</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- WordPress -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body">
+                <i class="bi bi-wordpress text-primary display-6 mb-2"></i>
+                <h5 class="card-title">WordPress</h5>
+                <span class="badge bg-success">90%</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- MySQL -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body">
+                <i class="bi bi-database-fill-gear text-secondary display-6 mb-2"></i>
+                <h5 class="card-title">MySQL</h5>
+                <span class="badge bg-success">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Tools & IDEs Heading -->
+        <div class="section-title text-center mt-5 mb-4">
+          <h4 class="text-primary" style="color: black !important;">Tools & IDEs</h4>
+
+        
+        
+
+          <p class="text-muted">Development and debugging environments I work with</p>
+        </div>
+    
+        <!-- Tools & IDEs Grid -->
+        <div class="row g-4 text-center">
+    
+          <!-- VS Code -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="bi bi-code-slash text-info display-6 mb-2"></i>
+                <h5 class="card-title">VS Code</h5>
+                <span class="badge bg-primary">95%</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- PyCharm -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="bi bi-terminal-fill text-success display-6 mb-2"></i>
+                <h5 class="card-title">PyCharm</h5>
+                <span class="badge bg-success">90%</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Postman -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="bi bi-gear-fill text-warning display-6 mb-2"></i>
+                <h5 class="card-title">Postman</h5>
+                <span class="badge bg-warning text-dark">85%</span>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Full-Stack Developer with 1 year of hands-on experience in web development. Skilled in Python, Django, HTML5, CSS3, JavaScript, React, AJAX, JSON, and PHP. Experienced with MySQL and SQLite databases, and proficient in using front-end frameworks like Bootstrap.</p>
+      </div><!-- End Section Title -->
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Dilsha P.K</h4>
+              <p><em>Full-Stack Developer based in Dubai, UAE, with strong expertise in both frontend and backend technologies, and hands-on experience in real-world projects and development environments.</em></p>
+              <ul>
+                <li>Dubai, UAE</li>
+                <li>+971 581072001</li>
+                <li>dilshapk57@gmail.com</li>
+              </ul>
+            </div>
+      
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science in Computer Science</h4>
+              <h5>Graduated</h5>
+              <p><em>University of Calicut, Kerala, India</em></p>
+              <p>Grade: B</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Science</h4>
+              <h5>Graduated</h5>
+              <p><em>IHRD, Malappuram from University of Calicut</em></p>
+              <p>Grade: B+</p>
+            </div>
+          </div>
+      
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Junior Python Developer</h4>
+              <h5>Feb 2024 – Oct 2024</h5>
+              <p><em>Sysol System Solutions Pvt. Ltd., Techno Park, India</em></p>
+              <ul>
+                <li>Developed and maintained backend functionalities for e-commerce websites using Python and Django.</li>
+                <li>Contributed to the development of an online job portal, focusing on frontend technologies like HTML5, CSS3, and JavaScript.</li>
+                <li>Ensured seamless integration between frontend and backend components.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="projects" class="projects section bg-light py-5">
+      <div class="container" data-aos="fade-up">
+    
+        <!-- Section Title -->
+        <div class="section-title mb-5">
+          <h2 class="fw-bold" style="color: black;">Projects</h2>
+     
+          <p class="text-muted">Here are some of the major projects I have developed and contributed to.</p>
+        </div>
+      </div>
+        <div class="row g-4">
+    
+          <!-- Home Services Marketplace -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="{% static 'assets/img/projects/home1.jpg' %}" class="card-img-top" alt="Home Services Marketplace Screenshot">
+              <div class="card-body">
+                <h5 class="card-title">Home Services Marketplace</h5>
+                <p class="card-text text-muted" style="text-align: justify;">
+                  A responsive platform that connects users with home service providers. Integrated booking, admin control, and service management.
+                  The "Home Services Marketplace" is a comprehensive web-based platform that connects homeowners with trusted service providers for a variety of home services, including cleaning, plumbing, electrical work, repair services, and more.
+                </p>
+                
+                <span class="badge bg-primary">Django</span>
+                <span class="badge bg-warning text-dark">Bootstrap</span>
+                <span class="badge bg-info text-dark">AJAX</span>
+                <span class="badge bg-success">SQLite</span>
+                <div class="mt-3 d-flex align-items-center">
+                  <a href="https://github.com/dilsha-dev/project.git" class="btn btn-sm btn-outline-dark mt-3" target="_blank">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <button class="btn btn-sm btn-success ms-2 mt-3" data-bs-toggle="modal" data-bs-target="#carouselModalHome">
+                    <i class="bi bi-images"></i> View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Carousel Modal -->
+          <div class="modal fade" id="carouselModalHome" tabindex="-1" aria-labelledby="carouselModalHomeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="carouselModalHomeLabel">Home Services Marketplace – Gallery</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                  <div id="homeProjectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'assets/img/projects/home1.jpg' %}" class="d-block w-100" alt="Screenshot 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/HOME2.jpg' %}" class="d-block w-100" alt="Screenshot 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/HOME3.jpg' %}" class="d-block w-100" alt="Screenshot 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/HOME4.jpg' %}" class="d-block w-100" alt="Screenshot 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/home7.jpg' %}" class="d-block w-100" alt="Screenshot 3">
+                      </div>
+                
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/home6.jpg' %}" class="d-block w-100" alt="Screenshot 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/HOME 9.jpg' %}" class="d-block w-100" alt="Screenshot 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/home10.jpg' %}" class="d-block w-100" alt="Screenshot 3">
+                      </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#homeProjectCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#homeProjectCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="{% static 'assets/img/projects/olx1.jpg' %}" class="card-img-top" alt="OLX Clone Screenshot">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">OLX Clone Web App</h5>
+                <p class="card-text text-muted" style="text-align: justify;">
+                  Developed a dynamic OLX-like online marketplace where users can register, post and manage ads, search by keywords/categories, and filter by listing type.
+                </p>
+                <ul class="list-unstyled small">
+                  <li><strong>Key Features:</strong></li>
+                  <li>✔️ User Auth & Profile Management</li>
+                  <li>✔️ Post/Edit/Delete Ads</li>
+                  <li>✔️ Category-Based Filtering & Search</li>
+                  <li>✔️ Ad Details: Title, Price, Images, Contact Info</li>
+                </ul>
+                <div class="mt-auto">
+                  <span class="badge bg-dark me-1">Django</span>
+                  <span class="badge bg-secondary me-1">HTML/CSS</span>
+                  <span class="badge bg-info text-dark me-1">Bootstrap</span>
+                  <span class="badge bg-success me-1">SQLite</span>
+                  <br>
+                  <a href="https://github.com/dilsha-dev/olx-clone" class="btn btn-sm btn-outline-dark mt-3" target="_blank">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <button class="btn btn-sm btn-success ms-2 mt-3" data-bs-toggle="modal" data-bs-target="#carouselModalOLX">
+                    <i class="bi bi-images"></i> View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- OLX Project Carousel Modal -->
+          <div class="modal fade" id="carouselModalOLX" tabindex="-1" aria-labelledby="carouselModalOLXLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="carouselModalOLXLabel">OLX Clone – Gallery</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                  <div id="olxProjectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'assets/img/projects/olx login.jpg' %}" class="d-block w-100" alt="OLX Screenshot 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/olx reg.jpg' %}" class="d-block w-100" alt="OLX Screenshot 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/olx1.jpg' %}" class="d-block w-100" alt="OLX Screenshot 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/olx2.jpg' %}" class="d-block w-100" alt="OLX Screenshot 4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/projects/olx3.jpg' %}" class="d-block w-100" alt="OLX Screenshot 5">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#olxProjectCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#olxProjectCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
+          <!-- Educational Course Recommendation System -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title">Educational Course Recommendation System</h5>
+                <p class="card-text text-muted">
+                  A smart recommender system that suggests educational courses tailored to user preferences using Flask and Python.
+                </p>
+                <span class="badge bg-dark">Python</span>
+                <span class="badge bg-info">Flask</span>
+                <span class="badge bg-warning text-dark">MySQL</span>
+                <div class="mt-3 d-flex align-items-center">
+                  <a href="#" class="btn btn-sm btn-outline-dark">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
+          <!-- Online Job Portal -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title">Online Job Portal</h5>
+                <p class="card-text text-muted">
+                  A feature-rich job portal with front-end ASP.NET and C++ integrations, backed by SQL Server for data handling.
+                </p>
+                <span class="badge bg-secondary">ASP.NET</span>
+                <span class="badge bg-dark">C++</span>
+                <span class="badge bg-success">SQL Server</span>
+                <div class="mt-3 d-flex align-items-center">
+                  <a href="#" class="btn btn-sm btn-outline-dark">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          
+
+
+    
+
+
+<!-- Certificates Section -->
+<section id="certificate" class="certificate section bg-light py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title mb-5 ms-3">
+    <h2>Certificates</h2>
+    <p>These certificates recognize my professional experience and project accomplishments.</p>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Experience Certificate -->
+      <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <!-- <img src="{% static 'assets/img/certificates/exper.jpg' %}" class="card-img-top" alt="Experience Certificate"> -->
+          <div class="card-body">
+            <h5 class="card-title">Relieving/Experience Letter</h5>
+            <p class="card-text small text-muted">From Sysol System Solutions Pvt. Ltd – for the role of Junior Python Developer (May 2023 – Jan 2024).</p>
+            <a href="{% static 'assets/img/certificates/exper.jpg' %}" class="btn btn-success btn-sm" target="_blank"><i class="bi bi-eye"></i> View Full</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Completion Certificate -->
+      <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <!-- <img src="{% static 'img/certificates/sysol.jpg' %}" class="card-img-top" alt="Project Completion Certificate"> -->
+          <div class="card-body">
+            <h5 class="card-title">Project Completion Certificate</h5>
+            <p class="card-text small text-muted">For successful completion of the project titled <strong>Online Job Portal</strong> at Kinfra Techno-Industrial Park, dated April 4, 2015.</p>
+            <a href="{% static 'assets/img/certificates/sysol.jpg' %}" class="btn btn-success btn-sm" target="_blank">
+              <i class="bi bi-eye"></i> View Full
+            </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+ 
+
+    <!-- Contact Section -->
+   
+
+
+
+
+
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact section py-5">
+  <div class="container">
+  
+      <div class="section-title mb-5 ms-3">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for any inquiries or collaborations.</p>
+    </div>
+
+    <div class="row gy-4">
+      <div class="col-lg-5">
+        <div class="info-wrap">
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt"></i>
+            <div><h5>Address</h5><p>Dubai, UAE</p></div>
+          </div>
+          <div class="info-item d-flex">
+            <i class="bi bi-telephone"></i>
+            <div><h5>Phone</h5><p>+971581072001 </p></div>
+          </div>
+          <div class="info-item d-flex">
+            <i class="bi bi-envelope"></i>
+            <div><h5>Email</h5><p>dilshapk57@gmail.com</p></div>
+          </div>
+          <iframe src="https://www.google.com/maps?q=Dubai,+UAE&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      
+
+      <div class="col-lg-7">
+        {% if success %}
+          <div class="alert alert-success">Your message has been sent. Thank you!</div>
+        {% endif %}
+        <form method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          {% csrf_token %}
+          <div class="row gy-4">
+            <div class="col-md-6 mb-3">
+              <label for="{{ form.name.id_for_label }}" class="form-label">Your Name</label>
+              {{ form.name }}
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="{{ form.email.id_for_label }}" class="form-label">Your Email</label>
+              {{ form.email }}
+            </div>
+            <div class="col-md-12 mb-3">
+              <label for="{{ form.subject.id_for_label }}" class="form-label">Subject</label>
+              {{ form.subject }}
+            </div>
+            <div class="col-md-12 mb-3">
+              <label for="{{ form.message.id_for_label }}" class="form-label">Message</label>
+              {{ form.message }}
+            </div>
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights Reserved 2025</span></p>
+      </div>
+      <div class="credits" style="font-size: 1rem; color: #050404; text-align: center; padding: 20px 0;">
+        <span style="font-weight: normal;">Designed and Developed by</span> <span style="font-weight: bold;">Dilsha PK</span>
+      </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
