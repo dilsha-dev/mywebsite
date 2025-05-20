@@ -2,6 +2,9 @@
 from django import forms
 from .models import Contact
 
+from django import forms
+from .models import Contact
+
 class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
@@ -29,3 +32,9 @@ class ContactForm(forms.ModelForm):
                 'id': 'message-field',
             }),
         }
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        if email and not email.endswith(('.com', '.org', '.net', '.ae')):
+            raise forms.ValidationError("Please enter a valid email address.")
+        return email
